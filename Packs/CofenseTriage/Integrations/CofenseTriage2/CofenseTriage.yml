@@ -260,9 +260,9 @@ script:
         - name: level
           description: indicator severity
         - name: start_date
-          description: designated start date tagged by analyst
+          description: designated start date tagged by analyst, in any format understood by Ruby's `Date._parse`
         - name: end_date
-          description: designated end date from assignment
+          description: designated end date from assignment, in any format understood by Ruby's `Date._parse`
       outputs:
         - contextPath: Cofense.Cofense.ThreatIndicators
           description: Threat Indicator Output
